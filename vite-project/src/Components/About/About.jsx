@@ -6,7 +6,7 @@ import profile_img from '../../assets/about_profile.svg';
 const tools = [
   { name: 'React', desc: 'Frontend library', icon: '⚛️' },
   { name: 'Next.js', desc: 'React framework', icon: '⏭️' },
-  { name: 'Pandas / NumPy', desc: 'Data analysis & numerical computing', icon: '📊' },
+  { name: 'Pandas/NumPy', desc: 'Data analysis ', icon: '📊' },
   { name: 'Tailwind CSS', desc: 'Utility-first CSS', icon: '💨' },
   { name: 'Python', desc: 'Programming language', icon: '🐍' },
   { name: 'TensorFlow', desc: 'ML framework', icon: '🔶' },
