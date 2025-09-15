@@ -4,14 +4,14 @@ import theme_pattern from '../../assets/theme_pattern.svg';
 import profile_img from '../../assets/about_profile.svg';
 
 const tools = [
-  { name: 'Figma', desc: 'Design tool', icon: '🖌️' },
-  { name: 'CSS', desc: 'User Interface', icon: '🎨' },
-  { name: 'JavaScript', desc: 'Interaction', icon: '💻' },
-  { name: 'NodeJS', desc: 'Web Server', icon: '🌐' },
-  { name: 'ExpressJS', desc: 'Node Framework', icon: '🚀' },
-  { name: 'MongoDB', desc: 'Database', icon: '🍃' },
-  { name: 'React', desc: 'Framework', icon: '⚛️' },
-  { name: 'TailwindCSS', desc: 'User Interface', icon: '🌊' },
+  { name: 'React', desc: 'Frontend library', icon: '⚛️' },
+  { name: 'Next.js', desc: 'React framework', icon: '⏭️' },
+  { name: 'HTML', desc: 'Markup language', icon: '🌐' },
+  { name: 'Tailwind CSS', desc: 'Utility-first CSS', icon: '💨' },
+  { name: 'Python', desc: 'Programming language', icon: '🐍' },
+  { name: 'TensorFlow', desc: 'ML framework', icon: '🔶' },
+  { name: 'Keras', desc: 'Deep learning API', icon: '🧠' },
+  { name: 'Docker', desc: 'Containerization', icon: '🐳' },
 ];
 
 const About = () => {
