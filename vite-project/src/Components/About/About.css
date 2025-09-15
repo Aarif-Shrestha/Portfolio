@@ -1,0 +1,127 @@
+.about {
+    
+  color: #fff;
+  padding: 48px 0 32px 0;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+
+.about-title {
+  position: relative;
+} 
+
+.about-title h1{
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.about-title img {
+    /* width: 250px; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.about-section{
+    display: flex;
+    gap: 60px;
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.about-para{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 20px;
+}
+
+.about-achievements{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.achievement{
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.achievement h1{
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF89)
+}
+
+.tools-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tools-section h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.tools-desc {
+  color: #b3b3b3;
+  margin-bottom: 24px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+.tool-card {
+  background: #232326;
+  border-radius: 12px;
+  padding: 18px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  transition: transform 0.18s;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+}
+
+.tool-icon {
+  font-size: 2rem;
+}
+
+.tool-name {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.08rem;
+  display: block;
+}
+
+.tool-desc {
+  color: #b3b3b3;
+  font-size: 0.98rem;
+  display: block;
+}
