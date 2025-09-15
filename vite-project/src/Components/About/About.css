@@ -38,7 +38,14 @@
 .about-right{
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.about-left img{
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .about-para{
@@ -56,7 +63,7 @@
 }
 
 .achievement{
-    font-size: 15px;
+    /* font-size: 15px; */
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -65,9 +72,18 @@
 }
 
 .achievement h1{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
-    background: linear-gradient(270deg, #DF89)
+    background: linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.achievement p{
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 500;
 }
 
 .tools-section {
@@ -89,17 +105,17 @@
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(4, 1fr); /* always 4 columns */
+  gap: 14px; /* reduced gap */
 }
 
 .tool-card {
   background: #232326;
-  border-radius: 12px;
-  padding: 18px 16px;
+  border-radius: 10px; /* slightly smaller radius */
+  padding: 12px 10px; /* reduced padding */
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px; /* reduced gap */
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
   transition: transform 0.18s;
 }
@@ -110,18 +126,18 @@
 }
 
 .tool-icon {
-  font-size: 2rem;
+  font-size: 1.4rem; /* reduced icon size */
 }
 
 .tool-name {
   font-weight: 600;
   color: #fff;
-  font-size: 1.08rem;
+  font-size: 0.98rem; /* slightly smaller font */
   display: block;
 }
 
 .tool-desc {
   color: #b3b3b3;
-  font-size: 0.98rem;
+  font-size: 0.88rem; /* slightly smaller font */
   display: block;
 }

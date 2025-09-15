@@ -16,7 +16,6 @@ const tools = [
 
 const About = () => {
   return (
-    <section className="about-container">
 
         <div className="about">
             <div className="about-title">
@@ -32,6 +31,23 @@ const About = () => {
                         <p> I'm Aarif, a web developer with a knack for crafting visually stunning and highly functional websites. Combining creativity and technical expertise, I turn ideas into digital masterpieces that excel in both appearance and performance.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sunt corrupti libero sint suscipit at, voluptatibus dolor, excepturi facere ratione possimus velit rem corporis, quibusdam repellendus dolorem fugiat omnis provident numquam voluptates commodi iste. Reprehenderit dolor iusto odio rerum molestiae eligendi sapiente totam! Delectus, sed id. Quod deleniti ad in?</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur alias perferendis libero atque tempore blanditiis explicabo velit nostrum nulla illum sed non, fugiat voluptatibus repudiandae aliquid voluptas temporibus corporis eum omnis ut recusandae? Mollitia libero, perferendis alias ex, cupiditate sed, rem omnis laboriosam velit veritatis excepturi modi et eius. Quidem.</p>
+                    </div>
+                    <div className="tools-section">
+                      <h2>Essential Tools I use</h2>
+                      <p className="tools-desc">
+                        Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.
+                      </p>
+                      <div className="tools-grid">
+                        {tools.map((tool) => (
+                          <div className="tool-card" key={tool.name}>
+                            <span className="tool-icon">{tool.icon}</span>
+                            <div>
+                              <span className="tool-name">{tool.name}</span>
+                              <span className="tool-desc">{tool.desc}</span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                 </div> 
             </div>
@@ -51,28 +67,28 @@ const About = () => {
                         <p>CLIENTS SATISFIED</p>
                     </div>
                 
-                </div>
-         
-        </div>
-         <div className="tools-section">
-        <h2>Essential Tools I use</h2>
-        <p className="tools-desc">
-          Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.
-        </p>
-        <div className="tools-grid">
-          {tools.map((tool) => (
-            <div className="tool-card" key={tool.name}>
-              <span className="tool-icon">{tool.icon}</span>
-              <div>
-                <span className="tool-name">{tool.name}</span>
-                <span className="tool-desc">{tool.desc}</span>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
+         
+        {/* <div className="tools-section">
+          <h2>Essential Tools I use</h2>
+          <p className="tools-desc">
+            Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.
+          </p>
+          <div className="tools-grid">
+            {tools.map((tool) => (
+              <div className="tool-card" key={tool.name}>
+                <span className="tool-icon">{tool.icon}</span>
+                <div>
+                  <span className="tool-name">{tool.name}</span>
+                  <span className="tool-desc">{tool.desc}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div> */}
       
-    </section>
+        </div>
+    
     );
 };
 
