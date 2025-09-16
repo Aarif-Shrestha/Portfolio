@@ -58,6 +58,25 @@
   color: inherit;
 }
 
+/* Mobile Overlay */
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 998;
+}
+
+.mobile-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Hamburger menu styles for mobile */
 .navbar-hamburger {
   display: none;
@@ -67,7 +86,9 @@
   width: 32px;
   height: 32px;
   cursor: pointer;
+  z-index: 1001;
 }
+
 .navbar-hamburger span {
   display: block;
   height: 4px;
@@ -75,7 +96,21 @@
   background: #fff;
   margin: 4px 0;
   border-radius: 2px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Hamburger animation when active */
+.navbar-hamburger span.active:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.navbar-hamburger span.active:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-hamburger span.active:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
 }
 
 /* Tablet styles */
@@ -94,109 +129,96 @@
   }
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
+/* Mobile styles - ≤747px */
+@media (max-width: 747px) {
   .navbar {
-    padding: 10px 16px;
+    padding: 12px 20px;
     justify-content: space-between;
+    z-index: 1000;
   }
+  
   .nav-menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #222;
+    flex-direction: column;
+    padding: 80px 30px 30px;
+    gap: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+    transition: left 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
   }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-item {
+    padding: 15px 20px;
+    text-align: left;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+  
+  .nav-item:hover {
+    background-color: #333;
+    border-color: #555;
+    transform: translateX(5px);
+  }
+  
   .navbar-hamburger {
     display: flex;
+    order: -1;
   }
+  
   .nav-buttons {
     position: static;
     font-size: 14px;
-    padding: 6px 12px;
+    padding: 8px 16px;
+    border-radius: 20px;
+  }
+  
+  /* Hide desktop menu completely on mobile */
+  .nav-menu:not(.active) {
+    display: none;
+  }
+  
+  /* Ensure anchor links work properly in mobile menu */
+  .nav-item .anchor-link {
+    display: block;
+    width: 100%;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .nav-item:hover .anchor-link {
+    color: #fff;
   }
 }
 
-/* Ultra-small mobile styles - ≤375px */
-@media (max-width: 375px) {
+/* Tablet styles - keep existing tablet behavior */
+@media (min-width: 748px) and (max-width: 1024px) {
   .navbar {
-    padding: 10px 15px;
-    justify-content: space-between;
+    padding: 12px 30px;
   }
   .nav-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #222;
-    flex-direction: column;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 10px 15px;
-    gap: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    z-index: 1000;
-  }
-  .nav-menu.active {
-    display: flex;
-  }
-  .navbar-hamburger {
-    display: flex;
-  }
-  .navbar-hamburger span {
-    width: 20px;
-    height: 3px;
-    margin: 3px 0;
-  }
-  .nav-buttons {
-    position: static;
+    gap: 16px;
     font-size: 13px;
     padding: 5px 10px;
   }
-  .nav-item {
-    padding: 8px 12px;
-    text-align: center;
-    border-radius: 8px;
-  }
-}
-
-/* Small-to-medium mobile styles - 376px to 500px */
-@media (min-width: 376px) and (max-width: 600px) {
-  .navbar {
-    padding: 12px 18px;
-    justify-content: space-between;
-  }
-  .nav-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #222;
-    flex-direction: column;
-    padding: 18px;
-    border-radius: 12px;
-    margin: 12px 18px;
-    gap: 14px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    z-index: 1000;
-  }
-  .nav-menu.active {
-    display: flex;
+  .nav-buttons {
+    right: 30px;
+    font-size: 15px;
   }
   .navbar-hamburger {
-    display: flex;
-  }
-  .navbar-hamburger span {
-    width: 22px;
-    height: 3px;
-    margin: 3px 0;
-  }
-  .nav-buttons {
-    position: static;
-    font-size: 14px;
-    padding: 6px 12px;
-  }
-  .nav-item {
-    padding: 10px 14px;
-    text-align: center;
-    border-radius: 10px;
+    display: none;
   }
 }
