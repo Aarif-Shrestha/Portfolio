@@ -133,3 +133,34 @@
     text-align: center;
   }
 }
+
+/* Small-to-medium mobile styles - 376px to 500px */
+@media (min-width: 376px) and (max-width: 600px) {
+  .footer {
+    padding: 1.3rem 18px 0.9rem 18px;
+    font-size: 0.88rem;
+  }
+  .footer-links {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.9rem;
+  }
+  .footer-link {
+    font-size: 0.88rem;
+    justify-content: center;
+    padding: 0.25rem 0;
+  }
+  .footer-icon {
+    width: 19px;
+    height: 19px;
+  }
+  .footer-link-text {
+    display: inline;
+  }
+  .footer-copy {
+    font-size: 0.82rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+}

@@ -164,3 +164,38 @@
         text-align: center;
     }
 }
+
+/* Small-to-medium mobile styles - 376px to 500px */
+@media (min-width: 376px) and (max-width: 600px) {
+    .hero {
+        margin-top: 35px;
+        gap: 18px;
+        padding: 0 18px;
+    }
+    .hero img {
+        width: 140px;
+    }
+    .hero h1 {
+        font-size: 22px;
+        width: 95%;
+        line-height: 1.2;
+    }
+    .hero p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .hero .hero-action {
+        font-size: 14px;
+        gap: 14px;
+        margin-bottom: 28px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .hero .resume, .hero .linkedin {
+        font-size: 14px;
+        padding: 11px 28px;
+        width: 200px;
+        text-align: center;
+    }
+}

@@ -231,9 +231,18 @@
   .about-left img {
     width: 180px;
   }
-  .about-title h1 {
-    font-size: 24px;
-    padding: 0 10px;
+  .about-title h1{
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .about-title img {
+      /* width: 250px; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
   }
   .about-para {
     font-size: 13px;
@@ -264,5 +273,66 @@
   }
   .tool-desc {
     font-size: 0.75rem;
+  }
+}
+
+/* Small-to-medium mobile styles - 376px to 500px */
+@media (min-width: 376px) and (max-width: 600px) {
+  .about {
+    margin: 35px 18px;
+    gap: 35px;
+    min-height: auto;
+  }
+  .about-section {
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+    align-items: center;
+  }
+  .about-left img {
+    width: 200px;
+  }
+  .about-title h1{
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .about-title img {
+    /* width: 250px; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  }
+  .about-para {
+    font-size: 14px;
+    gap: 14px;
+    text-align: left;
+  }
+  .about-achievements {
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 35px;
+  }
+  .achievement h1 {
+    font-size: 28px;
+  }
+  .achievement p {
+    font-size: 12px;
+  }
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .tool-card {
+    padding: 10px 8px;
+    gap: 6px;
+  }
+  .tool-name {
+    font-size: 0.9rem;
+  }
+  .tool-desc {
+    font-size: 0.8rem;
   }
 }
