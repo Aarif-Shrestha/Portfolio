@@ -63,7 +63,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="projects-section">
+    <section id='projects' className="projects-section">
       <div className="projects-title">
         <h1>Projects</h1>
         <img src={theme_pattern} alt="" />

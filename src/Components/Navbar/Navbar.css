@@ -52,3 +52,8 @@
   background: #ddd;
   transform: scale(1.1);
 }
+
+.anchor-link {
+  text-decoration: none;
+  color: inherit;
+}

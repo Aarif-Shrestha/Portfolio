@@ -5,7 +5,7 @@ import profile_img from '../../assets/pp.png'
 const Hero = () => {
   return (
     <div>
-      <div className="hero">
+      <div id = 'hero' className="hero">
         <h2>Welcome to my Portfolio</h2>
         <img src={profile_img} alt="Profile" />
         <h1><span>I'm Aarif Shrestha</span>, an aspiring and passionate developer.</h1>
