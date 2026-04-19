@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with React and Vite, showcasing professional skills, projects, and experience with a sleek dark theme and smooth animations.
 
-Portfolio: [Live Demo]([https://your-portfolio-url.com](https://portfolioaarif.netlify.app/))
+Portfolio: [Live Demo]([https://portfolioaarif.netlify.app/])
 
 
 
@@ -203,8 +203,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Aarif Shrestha**
 - GitHub: [@Aarif-Shrestha](https://github.com/Aarif-Shrestha)
-- Portfolio: [Live Demo](https://your-portfolio-url.com](https://portfolioaarif.netlify.app/))
-
+- Portfolio: [Live Demo]([https://portfolioaarif.netlify.app/])
 ## 🙏 Acknowledgments
 
 - React team for the amazing framework
