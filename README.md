@@ -2,7 +2,6 @@
 
 A modern, responsive personal portfolio website built with React and Vite, showcasing professional skills, projects, and experience with a sleek dark theme and smooth animations.
 
-![Portfolio Preview](./src/assets/pp.png)
 
 ## ✨ Features
 
