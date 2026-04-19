@@ -203,7 +203,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Aarif Shrestha**
 - GitHub: [@Aarif-Shrestha](https://github.com/Aarif-Shrestha)
-- Portfolio: [Live Demo]([https://your-portfolio-url.com](https://portfolioaarif.netlify.app/))
+- Portfolio: [Live Demo](https://your-portfolio-url.com](https://portfolioaarif.netlify.app/))
 
 ## 🙏 Acknowledgments
 
